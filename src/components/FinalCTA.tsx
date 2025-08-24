@@ -18,12 +18,16 @@ export const FinalCTA = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="premium" size="xl">
+            <a href="https://www.digitalmarvels.tech" target="_blank" rel="noopener noreferrer">
+              <Button variant="premium" size="xl">
               Work With Us
             </Button>
-            <Button variant="outline" size="xl">
+            </a>
+           <a href="https://www.digitalmarvels.tech/portfolio" target="_blank" rel="noopener noreferrer">
+             <Button variant="outline" size="xl">
               View More Cases
             </Button>
+           </a>
           </div>
         </div>
       </div>
