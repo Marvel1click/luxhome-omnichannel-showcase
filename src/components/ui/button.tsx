@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 transition-luxury",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-semibold ring-offset-background transition-luxury focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
@@ -13,20 +13,20 @@ const buttonVariants = cva(
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+          "border border-input bg-background/70 hover:border-accent hover:bg-accent/10",
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        premium: "gradient-accent text-accent-foreground font-semibold luxury-shadow hover:shadow-xl hover:scale-105 transition-luxury",
-        hero: "bg-primary/90 text-primary-foreground backdrop-blur-sm border border-primary-foreground/20 hover:bg-primary hover:scale-105 luxury-shadow transition-luxury",
+        premium: "gradient-accent text-accent-foreground luxury-shadow hover:-translate-y-0.5 hover:shadow-xl",
+        hero: "bg-primary-foreground text-primary backdrop-blur-sm border border-primary-foreground/20 hover:-translate-y-0.5 hover:bg-accent hover:text-accent-foreground luxury-shadow",
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
-        lg: "h-11 rounded-md px-8",
-        xl: "h-14 rounded-lg px-12 text-lg",
-        icon: "h-10 w-10",
+        lg: "h-11 rounded-md px-7",
+        xl: "h-12 min-h-12 rounded-md px-8 text-base sm:h-14 sm:px-10 sm:text-lg",
+        icon: "size-10",
       },
     },
     defaultVariants: {

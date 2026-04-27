@@ -9,37 +9,16 @@ import { FinalCTA } from "@/components/FinalCTA";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <main className="min-h-screen overflow-hidden">
       <Navigation />
-      
-      <section id="hero">
-        <HeroSection />
-      </section>
-      
-      <section id="overview">
-        <ProjectOverview />
-      </section>
-      
-      <section id="challenge">
-        <ChallengeSolutionOutcome />
-      </section>
-      
-      <section id="visual">
-        <VisualStorytelling />
-      </section>
-      
-      <section id="metrics">
-        <KeyMetrics />
-      </section>
-      
-      <section id="testimonial">
-        <ClientTestimonial />
-      </section>
-      
-      <section id="cta">
-        <FinalCTA />
-      </section>
-    </div>
+      <HeroSection />
+      <ProjectOverview />
+      <ChallengeSolutionOutcome />
+      <VisualStorytelling />
+      <KeyMetrics />
+      <ClientTestimonial />
+      <FinalCTA />
+    </main>
   );
 };
 

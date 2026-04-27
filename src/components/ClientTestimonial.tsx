@@ -1,37 +1,37 @@
+import { Quote } from "lucide-react";
+
 export const ClientTestimonial = () => {
   return (
-    <section className="py-24 bg-background">
-      <div className="max-w-5xl mx-auto px-6">
-        <div className="text-center animate-slide-up">
-          <div className="mb-12">
-            <div className="w-20 h-1 gradient-accent mx-auto rounded-full mb-8"></div>
-            <h2 className="text-3xl md:text-4xl font-display font-semibold text-foreground mb-12">
-              Client Testimonial
+    <section id="testimonial" className="bg-background py-20 sm:py-24 lg:py-28">
+      <div className="section-shell">
+        <div className="grid gap-10 lg:grid-cols-[0.38fr_0.62fr] lg:items-start">
+          <div className="reveal">
+            <div className="mb-5 flex items-center gap-3">
+              <span className="h-px w-8 bg-accent" />
+              <span className="eyebrow">Client Perspective</span>
+            </div>
+            <h2 className="text-4xl font-semibold leading-tight text-foreground sm:text-5xl">
+              Trusted by leaders building modern retail experiences.
             </h2>
           </div>
-          
-          <div className="bg-card rounded-3xl p-12 soft-shadow hover:luxury-shadow transition-luxury">
-            <blockquote className="text-2xl md:text-3xl font-light text-card-foreground leading-relaxed mb-12 italic">
-              "The transformation has been remarkable. Our customers now have a 
-              seamless experience whether they're shopping in-store or online. 
-              The AR preview feature has become a game-changer for our sales team."
+
+          <figure className="reveal rounded-lg border border-border bg-card p-7 shadow-sm sm:p-10">
+            <Quote className="mb-8 size-10 text-accent" aria-hidden="true" />
+            <blockquote className="text-2xl font-light leading-relaxed text-card-foreground sm:text-3xl">
+              The transformation has been remarkable. Our customers now have a seamless experience
+              whether they are shopping in-store or online. The AR preview feature has become a
+              game-changer for our sales team.
             </blockquote>
-            
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <div className="w-16 h-16 rounded-full gradient-accent flex items-center justify-center">
-                <span className="text-xl font-semibold text-accent-foreground">SL</span>
+            <figcaption className="mt-10 flex flex-col gap-4 border-t border-border pt-6 sm:flex-row sm:items-center">
+              <div className="flex size-14 items-center justify-center rounded-md gradient-accent font-semibold text-accent-foreground">
+                SL
               </div>
-              
-              <div className="text-center sm:text-left">
-                <div className="text-lg font-semibold text-card-foreground">
-                  Sarah Lancaster
-                </div>
-                <div className="text-muted-foreground">
-                  CEO, LuxHome Furnishings
-                </div>
+              <div>
+                <div className="font-semibold text-card-foreground">Sarah Lancaster</div>
+                <div className="text-sm text-muted-foreground">CEO, LuxHome Furnishings</div>
               </div>
-            </div>
-          </div>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
