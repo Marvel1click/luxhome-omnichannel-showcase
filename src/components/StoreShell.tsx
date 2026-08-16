@@ -185,7 +185,19 @@ export const StoreShell = () => {
           </div>
           <div className="flex flex-col gap-4 pt-6 text-[10px] uppercase tracking-[0.15em] text-white/40 sm:flex-row sm:items-center sm:justify-between">
             <p>© 2026 LuxHome. Demonstration storefront.</p>
-            <div className="flex gap-5"><span>Delivery</span><span>Care guide</span><span>Terms</span></div>
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
+              <span>Delivery</span>
+              <span>Care guide</span>
+              <span>Terms</span>
+              <a
+                href="https://digitalmarvels.tech"
+                target="_blank"
+                rel="noreferrer"
+                className="text-white/55 transition hover:text-white"
+              >
+                Made by Digital Marvels
+              </a>
+            </div>
           </div>
         </div>
       </footer>
